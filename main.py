@@ -12,4 +12,3 @@ app = QApplication([])
 ex = Widget()
 ex.show()
 app.exec_()
-def generate(self):

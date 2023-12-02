@@ -1,6 +1,15 @@
 from PyQt5.QtWidgets import QApplication
-a = QApplication([])
+from PyQt5.QtWidgets import QMainWindow
+from ui import Ui_MainWindow
 
-from main_window import*
-win_card.show()
-a.exec_()
+class Widget(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
+
+app = QApplication([])
+ex = Widget()
+ex.show()
+app.exec_()
+def generate(self):
